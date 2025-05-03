@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         noEntryIcon.setAttribute('data-uk-icon', 'icon: ban');
         noEntryIcon.style.userSelect = 'none';
 
-        var messageText = document.createElement('p');
+        var messageText = document.createElement('span');
         messageText.textContent = 'Video Bulunamadı...';
         messageText.style.userSelect = 'none';
 
