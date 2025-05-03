@@ -12,9 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
         noEntryIcon.setAttribute('data-uk-icon', 'icon: ban');
         noEntryIcon.style.color = '#ff3547';
         noEntryIcon.style.userSelect = 'none'; // Prevent icon selection
-        noEntryIcon.style.width = '48px'; // Set icon width
-        noEntryIcon.style.height = '48px'; // Set icon height
-        noEntryIcon.style.display = 'inline-block'; // Required for size styling
 
         var messageText = document.createElement('p');
         messageText.textContent = 'Video Bulunamadı...';
