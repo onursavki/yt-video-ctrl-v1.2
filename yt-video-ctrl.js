@@ -33,6 +33,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 svgIcon.style.width = '40px';
                 svgIcon.style.height = '40px';
                 svgIcon.style.color = '#ff3547';
+                svgIcon.style.marginTop = '40px';
+                svgIcon.style.display = 'block'; // margin-top uygulanabilsin diye block yapılmalı
+                svgIcon.style.marginLeft = 'auto';
+                svgIcon.style.marginRight = 'auto';
             }
         }, 100); // UIkit needs a short delay to inject the SVG
     }
