@@ -10,12 +10,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         var noEntryIcon = document.createElement('span');
         noEntryIcon.setAttribute('data-uk-icon', 'icon: ban');
-        noEntryIcon.style.color = '#ff3547';
-        noEntryIcon.style.userSelect = 'none'; // Prevent icon selection
+        noEntryIcon.style.userSelect = 'none';
 
         var messageText = document.createElement('p');
         messageText.textContent = 'Video Bulunamadı...';
-        messageText.style.userSelect = 'none'; // Prevent text selection
+        messageText.style.userSelect = 'none';
 
         // Append elements to the warning message
         warningMessage.appendChild(noEntryIcon);
@@ -26,5 +25,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Hide the video container
         videoContainer.style.display = 'none';
+
+        // Delay to ensure UIkit inserts the SVG before styling
+        setTimeout(function () {
+            var svgIcon = noEntryIcon.querySelector('svg');
+            if (svgIcon) {
+                svgIcon.style.width = '40px';
+                svgIcon.style.height = '40px';
+                svgIcon.style.color = '#ff3547';
+            }
+        }, 100); // UIkit needs a short delay to inject the SVG
     }
 });
