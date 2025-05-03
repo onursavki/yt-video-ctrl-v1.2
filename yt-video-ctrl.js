@@ -8,17 +8,17 @@ document.addEventListener('DOMContentLoaded', function () {
         var warningMessage = document.createElement('center');
         warningMessage.id = 'warningMessage';
 
-        var noEntrySpan = document.createElement('span');
-        noEntrySpan.className = 'noentry';
-        noEntrySpan.innerHTML = '⛔'; // Insert the warning symbol
-        noEntrySpan.style.userSelect = 'none'; // Prevent emoji selection
+        var noEntryIcon = document.createElement('span');
+        noEntryIcon.setAttribute('data-uk-icon', 'icon: ban');
+        noEntryIcon.style.color = '#ff3547';
+        noEntryIcon.style.userSelect = 'none'; // Prevent icon selection
 
         var messageText = document.createElement('p');
         messageText.textContent = 'Video Bulunamadı...';
         messageText.style.userSelect = 'none'; // Prevent text selection
 
         // Append elements to the warning message
-        warningMessage.appendChild(noEntrySpan);
+        warningMessage.appendChild(noEntryIcon);
         warningMessage.appendChild(messageText);
 
         // Insert the warning message after the video container
