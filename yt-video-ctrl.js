@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(function () {
             var svgIcon = noEntryIcon.querySelector('svg');
             if (svgIcon) {
-                svgIcon.style.width = '40px';
-                svgIcon.style.height = '40px';
+                svgIcon.style.width = '35px';
+                svgIcon.style.height = '35px';
                 svgIcon.style.color = '#ff3547';
                 svgIcon.style.marginTop = '40px';
                 svgIcon.style.display = 'block'; // margin-top uygulanabilsin diye block yapılmalı
